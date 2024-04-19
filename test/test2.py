@@ -97,7 +97,8 @@ def simplify_directory_structure(source_dir, target_dir):
         # add share modal code
         share_modal_html = getShareModalHtml(calculator)
         share_modal_html = share_modal_html.replace("<!-- CALCULATOR, LLC at www.calculator.io. Use is granted only if this statement and all links to www.calculator.io are maintained. -->", "")
-        share_modal_html = share_modal_html.replace("https://www.calculator.io/widget", "https://www.size.ly/embed")
+        share_modal_html = share_modal_html.replace("https://www.calculator.io/widget", "https://calc.size.ly/embed")
+        share_modal_html = share_modal_html.replace("https://www.calculator.io/embed", "https://calc.size.ly/embed")
         share_modal_html = share_modal_html.replace("https://www.calculator.io", "https://www.size.ly")
         pattern = r'<font color="#000000" size="1">https://www\.size\.ly/([^/]*)/</font>'
         replacement_text = r'<font color="#333" size="1">Size.ly/Calculator</font>'

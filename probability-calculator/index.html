@@ -40,9 +40,9 @@
   </div>
   <div class="modal-share__content modal-share__content--active">
    <textarea class="modal-share__textarea" id="share-widget">
-<iframe class="probability-calculator iframe" frameborder="0" onload='javascript:(function(e){e.style.height=e.contentWindow.document.body.scrollHeight+15+"px";}(this));' src="https://calc.size.ly/embed/probability-calculator/" style="height:200px;" width="100%"></iframe>
+<iframe class="probability-calculator iframe" frameborder="0" onload='javascript:(function(e){e.style.height=e.contentWindow.document.body.scrollHeight+15+"px";}(this));' src="https://www.size.ly/embed/probability-calculator/" style="height:200px;" width="100%"></iframe>
 <br/><center><a href="https://www.size.ly/probability-calculator/" style="text-decoration:none;" target="_blank"><font color="#333" size="1">Size.ly/Calculator</font></a></center></textarea>
-   <div onclick="window.open('https://calc.size.ly/embed/probability-calculator/','Probability Calculator','width=600,height=580,toolbar=no,menubar=no,scrollbars=yes,resizable=yes');return false;" style="padding-top: 15px;color:#5045E5;cursor:pointer;">
+   <div onclick="window.open('https://www.size.ly/embed/probability-calculator/','Probability Calculator','width=600,height=580,toolbar=no,menubar=no,scrollbars=yes,resizable=yes');return false;" style="padding-top: 15px;color:#5045E5;cursor:pointer;">
     Preview Probability Calculator Widget
    </div>
   </div>
@@ -117,7 +117,7 @@
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row " tabindex="0">
                 					<select class="input-field__text" onchange="toggleRelatedInputs(this)" id="probability_of_dropdown_a">
-                							<option value="A: P(A)" selected>
+											<option value="A: P(A)" selected>
                 							A: P(A)
                 							</option>
                 							<option value="B: P(B)" >
@@ -129,17 +129,17 @@
                 							<option value="B NOT occuring: P(B&#x27;)" >
                 							B NOT occuring: P(B&#x27;)
                 							</option>
-                							<option value="A and B both occuring: P(Aâˆ©B)" >
-                							A and B both occuring: P(Aâˆ©B)
+                							<option value="A and B both occuring: P(A∩B)" >
+                							A and B both occuring: P(A∩B)
                 							</option>
-                							<option value="A or B or both occur: P(AâˆªB)" >
-                							A or B or both occur: P(AâˆªB)
+                							<option value="A or B or both occur: P(A∪B)" >
+                							A or B or both occur: P(A∪B)
                 							</option>
-                							<option value="A or B occurs but NOT both: P(AÎ”B)" >
-                							A or B occurs but NOT both: P(AÎ”B)
+                							<option value="A or B occurs but NOT both: P(AΔB)" >
+                							A or B occurs but NOT both: P(AΔB)
                 							</option>
-                							<option value="Neither A nor B occuring: P((AâˆªB)&#x27;)" >
-                							Neither A nor B occuring: P((AâˆªB)&#x27;)
+                							<option value="Neither A nor B occuring: P((A∪B)&#x27;)" >
+                							Neither A nor B occuring: P((A∪B)&#x27;)
                 							</option>
                 					</select>
                 				</div>
@@ -158,7 +158,7 @@
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row " tabindex="0">
                 					<select class="input-field__text" onchange="toggleRelatedInputs(this)" id="probability_of_dropdown_b">
-                							<option value="A: P(A)" >
+											<option value="A: P(A)" >
                 							A: P(A)
                 							</option>
                 							<option value="B: P(B)" selected>
@@ -170,17 +170,17 @@
                 							<option value="B NOT occuring: P(B&#x27;)" >
                 							B NOT occuring: P(B&#x27;)
                 							</option>
-                							<option value="A and B both occuring: P(Aâˆ©B)" >
-                							A and B both occuring: P(Aâˆ©B)
+                							<option value="A and B both occuring: P(A∩B)" >
+                							A and B both occuring: P(A∩B)
                 							</option>
-                							<option value="A or B or both occur: P(AâˆªB)" >
-                							A or B or both occur: P(AâˆªB)
+                							<option value="A or B or both occur: P(A∪B)" >
+                							A or B or both occur: P(A∪B)
                 							</option>
-                							<option value="A or B occurs but NOT both: P(AÎ”B)" >
-                							A or B occurs but NOT both: P(AÎ”B)
+                							<option value="A or B occurs but NOT both: P(AΔB)" >
+                							A or B occurs but NOT both: P(AΔB)
                 							</option>
-                							<option value="Neither A nor B occuring: P((AâˆªB)&#x27;)" >
-                							Neither A nor B occuring: P((AâˆªB)&#x27;)
+                							<option value="Neither A nor B occuring: P((A∪B)&#x27;)" >
+                							Neither A nor B occuring: P((A∪B)&#x27;)
                 							</option>
                 					</select>
                 				</div>
@@ -227,7 +227,7 @@
                 		</label>	</div>
                 	<div class="input-wrapper row tab" data-tab="3">
                 		<label class="input col   ">
-                			<p class="input__title">Mean: (Âµ)</p>
+                			<p class="input__title">Mean: (µ)</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="probability_mean" value="0"  />
                 			</div>
@@ -236,7 +236,7 @@
                 		</label>	</div>
                 	<div class="input-wrapper row tab" data-tab="3">
                 		<label class="input col   ">
-                			<p class="input__title">Standard Deviation (Ïƒ)</p>
+                			<p class="input__title">Standard Deviation (σ)</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="probability_deviation" value="1"  />
                 			</div>
@@ -350,7 +350,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th>Probability of A and B both occuring: P(Aâˆ©B)</th>
+					<th>Probability of A and B both occuring: P(A∩B)</th>
 					<td><span id="result_paAndPb">0.2</span></td>
 					<td class="short">
 						<svg width="43" height="30" viewBox="0 0 43 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -363,7 +363,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th>Probability that A or B or both occur: P(AâˆªB)</th>
+					<th>Probability that A or B or both occur: P(A∪B)</th>
 					<td><span id="result_paOrPb">0.7</span></td>
 					<td class="short">
 						<svg width="43" height="30" viewBox="0 0 43 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -380,7 +380,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th>Probability that A or B occurs but NOT both: P(AÎ”B)</th>
+					<th>Probability that A or B occurs but NOT both: P(AΔB)</th>
 					<td><span id="result_paXorPb">0.5</span></td>
 					<td class="short">
 						<svg width="43" height="30" viewBox="0 0 43 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -399,7 +399,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th>Probability of neither A nor B occuring: P((AâˆªB)')</th>
+					<th>Probability of neither A nor B occuring: P((A∪B)')</th>
 					<td><span id="result_paNorPb">0.3</span></td>
 					<td class="short">
 						<svg width="43" height="30" viewBox="0 0 43 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -468,12 +468,12 @@
 		Probability of B: P(B) = 0.4 <br><br>
 		Probability of A NOT occuring: P(A') = 1 - P(A) = 0.5 <br><br>
 		Probability of B NOT occuring: P(B') = 1 - P(B) = 0.6 <br><br>
-		Probability of A and B both occuring: P(Aâˆ©B) = P(A) Ã— P(B) = 0.2 <br><br>
-		Probability that A or B or both occur: P(AâˆªB) = P(A) + P(B) - P(Aâˆ©B) = 0.7 <br><br>
-		Probability that A or B occurs but NOT both: P(AÎ”B) = P(A) + P(B) - 2P(Aâˆ©B) = 0.5 <br><br>
-		Probability of neither A nor B occuring: P((AâˆªB)') = 1 - P(AâˆªB) = 0.3 <br><br>
-		Probability of A occuring but NOT B: P(A) Ã— (1 - P(B)) = 0.3 <br><br>
-		Probability of B occuring but NOT A: (1 - P(A)) Ã— P(B) = 0.2
+		Probability of A and B both occuring: P(A∩B) = P(A) × P(B) = 0.2 <br><br>
+		Probability that A or B or both occur: P(A∪B) = P(A) + P(B) - P(A∩B) = 0.7 <br><br>
+		Probability that A or B occurs but NOT both: P(AΔB) = P(A) + P(B) - 2P(A∩B) = 0.5 <br><br>
+		Probability of neither A nor B occuring: P((A∪B)') = 1 - P(A∪B) = 0.3 <br><br>
+		Probability of A occuring but NOT B: P(A) × (1 - P(B)) = 0.3 <br><br>
+		Probability of B occuring but NOT A: (1 - P(A)) × P(B) = 0.2
 	</p>
 </div>
 
@@ -486,13 +486,13 @@
 		Probability of B occuring 3 time(s) = 0.3<sup>3</sup> = 0.027 <br><br>		
 		Probability of B NOT occuring = (1-0.3)<sup>3</sup> = 0.343 <br><br>		
 		Probability of B occuring = 1-(1-0.3)<sup>3</sup> = 0.657 <br><br>		
-		Probability of A occuring 5 time(s) and B occuring 3 time(s) = 0.6<sup>5</sup> Ã— 0.3<sup>3</sup> = 0.00209952 <br><br>		
-		Probability of neither A nor B occuring = (1-0.6)<sup>5</sup> Ã— (1-0.3)<sup>3</sup> = 0.00351232 <br><br>		
-		Probability of both A and B occuring = (1-(1-0.6)<sup>5</sup>) Ã— (1-(1-0.3)<sup>3</sup>) = 0.65027232 <br><br>		
-		Probability of A occuring 5 times but not B = 0.6<sup>5</sup> Ã— (1-0.3)<sup>3</sup> = 0.02667168 <br><br>		
-		Probability of B occuring 3 times but not A = (1-0.6)<sup>5</sup> Ã— 0.3<sup>3</sup> = 2.7648e-4 <br><br>		
-		Probability of A occuring but not B = (1-(1-0.6)<sup>5</sup>) Ã— (1-0.3)<sup>3</sup> = 0.33948768 <br><br>		
-		Probability of B occuring but not A = (1-0.6)<sup>5</sup> Ã— (1-(1-0.3)<sup>3</sup>) = 0.00672768
+		Probability of A occuring 5 time(s) and B occuring 3 time(s) = 0.6<sup>5</sup> × 0.3<sup>3</sup> = 0.00209952 <br><br>		
+		Probability of neither A nor B occuring = (1-0.6)<sup>5</sup> × (1-0.3)<sup>3</sup> = 0.00351232 <br><br>		
+		Probability of both A and B occuring = (1-(1-0.6)<sup>5</sup>) × (1-(1-0.3)<sup>3</sup>) = 0.65027232 <br><br>		
+		Probability of A occuring 5 times but not B = 0.6<sup>5</sup> × (1-0.3)<sup>3</sup> = 0.02667168 <br><br>		
+		Probability of B occuring 3 times but not A = (1-0.6)<sup>5</sup> × 0.3<sup>3</sup> = 2.7648e-4 <br><br>		
+		Probability of A occuring but not B = (1-(1-0.6)<sup>5</sup>) × (1-0.3)<sup>3</sup> = 0.33948768 <br><br>		
+		Probability of B occuring but not A = (1-0.6)<sup>5</sup> × (1-(1-0.3)<sup>3</sup>) = 0.00672768
 	</p>
 </div>
 
@@ -501,8 +501,8 @@
 	<p class="table-cell table-cell--only" id="result_distribution">
 		The probability between -1 and 1 is 0.68268 <br><br>
 		The probability outside of -1 and 1 is 0.31732 <br><br>
-		The probability of -1 or less (â‰¤-1) is 0.15866 <br><br>
-		The probability of 1 or more (â‰¥1) is 0.15866
+		The probability of -1 or less (≤-1) is 0.15866 <br><br>
+		The probability of 1 or more (≥1) is 0.15866
 	</p>
 	<div class="result-table__wrapper"> 
 		<table class="result-table">
@@ -519,57 +519,57 @@
 				</tr>
 				<tr id="result_confidence_1">
 					<td>0.6828</td>
-					<td>-1.00000 â€“ 1.00000</td>
+					<td>-1.00000 – 1.00000</td>
 					<td>1</td>
 				</tr>
 				<tr id="result_confidence_2">
 					<td>0.8</td>
-					<td>-1.28155 â€“ 1.28155</td>
+					<td>-1.28155 – 1.28155</td>
 					<td>1.281551565545</td>
 				</tr>
 				<tr id="result_confidence_3">
 					<td>0.9</td>
-					<td>-1.64485 â€“ 1.64485</td>
+					<td>-1.64485 – 1.64485</td>
 					<td>1.644853626951</td>
 				</tr>
 				<tr id="result_confidence_4">
 					<td>0.95</td>
-					<td>-1.95996 â€“ 1.95996</td>
+					<td>-1.95996 – 1.95996</td>
 					<td>1.959963984540</td>
 				</tr>
 				<tr id="result_confidence_5">
 					<td>0.98</td>
-					<td>-2.32635 â€“ 2.32635</td>
+					<td>-2.32635 – 2.32635</td>
 					<td>2.326347874041</td>
 				</tr>
 				<tr id="result_confidence_6">
 					<td>0.99</td>
-					<td>-2.57583 â€“ 2.57583</td>
+					<td>-2.57583 – 2.57583</td>
 					<td>2.575829303549</td>
 				</tr>
 				<tr id="result_confidence_7">
 					<td>0.995</td>
-					<td>-2.80703 â€“ 2.80703</td>
+					<td>-2.80703 – 2.80703</td>
 					<td>2.807033768344</td>
 				</tr>
 				<tr id="result_confidence_8">
 					<td>0.998</td>
-					<td>-3.09023 â€“ 3.09023</td>
+					<td>-3.09023 – 3.09023</td>
 					<td>3.090232306168</td>
 				</tr>
 				<tr id="result_confidence_9">
 					<td>0.999</td>
-					<td>-3.29053 â€“ 3.29053</td>
+					<td>-3.29053 – 3.29053</td>
 					<td>3.290526731492</td>
 				</tr>
 				<tr id="result_confidence_10">
 					<td>0.9999</td>
-					<td>-3.89059 â€“ 3.89059</td>
+					<td>-3.89059 – 3.89059</td>
 					<td>3.890591886413</td>
 				</tr>
 				<tr id="result_confidence_11">
 					<td>0.99999</td>
-					<td>-4.41717 â€“ 4.41717</td>
+					<td>-4.41717 – 4.41717</td>
 					<td>4.417173413469 </td>
 				</tr>
 			</tbody>

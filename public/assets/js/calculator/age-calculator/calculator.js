@@ -30,7 +30,7 @@ function calculate() {
 
 	/*Months*/
 	let monthsResult = '';
-	let months = 24 * diff.y + diff.m;
+	let months = 12 * diff.y + diff.m;
 	if (months > 0) monthsResult = `${plural(setCommas(months), 'm')}`;
 	if (months > 0 && diff.d > 0) monthsResult += ` ${plural(diff.d, 'd')}`;
 

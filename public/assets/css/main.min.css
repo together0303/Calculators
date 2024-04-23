@@ -4071,10 +4071,10 @@ html.dark .prime-factorization-calculator td::after {
   align-items: center;
   justify-content: center;
 }
-.calculator-content__geometry path[fill="#F5F3FF"], .calculator-content__geometry circle[fill="#F5F3FF"], .calculator-content__geometry rect[fill="#F5F3FF"], .calculator-content__geometry ellipse[fill="#F5F3FF"] {
+/* .calculator-content__geometry path[fill="#dae5ff"], .calculator-content__geometry circle[fill="#dae5ff"], .calculator-content__geometry rect[fill="#dae5ff"], .calculator-content__geometry ellipse[fill="#dae5ff"] {
   fill: #F5F3FF;
 }
-html.dark .calculator-content__geometry path[fill="#F5F3FF"], html.dark .calculator-content__geometry circle[fill="#F5F3FF"], html.dark .calculator-content__geometry rect[fill="#F5F3FF"], html.dark .calculator-content__geometry ellipse[fill="#F5F3FF"] {
+html.dark .calculator-content__geometry path[fill="#dae5ff"], html.dark .calculator-content__geometry circle[fill="#dae5ff"], html.dark .calculator-content__geometry rect[fill="#dae5ff"], html.dark .calculator-content__geometry ellipse[fill="#dae5ff"] {
   fill: #4C4E72;
 }
 .calculator-content__geometry path[fill="#fff"], .calculator-content__geometry circle[fill="#fff"], .calculator-content__geometry rect[fill="#fff"], .calculator-content__geometry ellipse[fill="#fff"] {
@@ -4083,12 +4083,12 @@ html.dark .calculator-content__geometry path[fill="#F5F3FF"], html.dark .calcula
 html.dark .calculator-content__geometry path[fill="#fff"], html.dark .calculator-content__geometry circle[fill="#fff"], html.dark .calculator-content__geometry rect[fill="#fff"], html.dark .calculator-content__geometry ellipse[fill="#fff"] {
   fill: #1F2937;
 }
-html.dark .calculator-content__geometry rect[stroke="#7C3AED"], html.dark .calculator-content__geometry circle[stroke="#7C3AED"], html.dark .calculator-content__geometry path[stroke="#7C3AED"], html.dark .calculator-content__geometry ellipse[stroke="#7C3AED"] {
+html.dark .calculator-content__geometry rect[stroke="#336bff"], html.dark .calculator-content__geometry circle[stroke="#336bff"], html.dark .calculator-content__geometry path[stroke="#336bff"], html.dark .calculator-content__geometry ellipse[stroke="#336bff"] {
   stroke: #A78BFA;
 }
-html.dark .calculator-content__geometry path[fill="#7C3AED"] {
+html.dark .calculator-content__geometry path[fill="#336BFF"] {
   fill: #A78BFA;
-}
+} */
 .calculator-content--small {
   padding: 12px 32px;
 }
